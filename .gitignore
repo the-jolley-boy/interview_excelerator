@@ -1,2 +1,4 @@
 .env
 interview_manager.db
+ui_files
+__pycache__/
