@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>691</width>
+    <height>431</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QWidget" name="formLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>271</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <layout class="QFormLayout" name="keyForm">
+     <item row="1" column="0">
+      <widget class="QLabel" name="openAIKeyLabel">
+       <property name="text">
+        <string>OpenAI Key:</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="openAIKeyLineEdit">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
+      <widget class="QLabel" name="inputDeviceIDLabel">
+       <property name="text">
+        <string>Input Device ID</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="1">
+      <widget class="QLineEdit" name="inputDeviceIDLineEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>0</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="settingsVerticalLayout">
+     <item>
+      <widget class="QLabel" name="settingsLabel">
+       <property name="styleSheet">
+        <string notr="true">font: 75 10pt &quot;Verdana&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Add/Update Settings</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="gridLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>280</x>
+      <y>20</y>
+      <width>81</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <layout class="QGridLayout" name="SubmitButtonGridLayout">
+     <item row="0" column="0">
+      <widget class="QPushButton" name="openAIButton">
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QPushButton" name="inputDeviceButton">
+       <property name="text">
+        <string>Submit</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>10</y>
+      <width>261</width>
+      <height>241</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="deviceSearchOutputVerticalLayout">
+     <item>
+      <widget class="QLabel" name="deviceSearchLabel">
+       <property name="styleSheet">
+        <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Looking for Input Device ID for VB-Audio? 
+Click the button below to list them</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="deviceSearchOutputTextEdit"/>
+     </item>
+     <item>
+      <widget class="QPushButton" name="deviceSearchOutputButton">
+       <property name="text">
+        <string>View input_device ID's</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>90</y>
+      <width>403</width>
+      <height>331</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="databaseVerticalLayout">
+     <item>
+      <widget class="QLabel" name="databaseLabel">
+       <property name="styleSheet">
+        <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+       </property>
+       <property name="text">
+        <string>View the database tables below</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <layout class="QHBoxLayout" name="databaseButtonHorizontalLayout">
+       <item>
+        <widget class="QPushButton" name="databaseInterviewButton">
+         <property name="text">
+          <string>interviews</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="databaseQuestionsButton">
+         <property name="text">
+          <string>questions</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="databaseAnswersButton">
+         <property name="text">
+          <string>answers</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="databaseSettingsButton">
+         <property name="text">
+          <string>settings</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="databaseVoiceRespButton">
+         <property name="text">
+          <string>voice_resp</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <widget class="QTextEdit" name="databaseTextEdit"/>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget_5">
+    <property name="geometry">
+     <rect>
+      <x>420</x>
+      <y>260</y>
+      <width>261</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="guidesVerticalLayout">
+     <item>
+      <widget class="QLabel" name="guidesLabel">
+       <property name="styleSheet">
+        <string notr="true">font: 75 8pt &quot;Verdana&quot;;</string>
+       </property>
+       <property name="text">
+        <string>Guides</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="guidesVBButton">
+       <property name="text">
+        <string>VB-Audio setup guide (needed to mask output audio
+to input)</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="guidesOpenAIButton">
+       <property name="text">
+        <string>Getting your OpenAI key</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="guidesProjectButton">
+       <property name="text">
+        <string>Project overview with code</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
